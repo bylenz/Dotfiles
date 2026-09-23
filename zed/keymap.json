@@ -1,0 +1,79 @@
+// Atajos estilo NvChad (leader = espacio)
+[
+  {
+    "context": "vim_mode == insert",
+    "bindings": {
+      "j k": "vim::NormalBefore"
+    }
+  },
+  {
+    "context": "vim_mode == normal && !menu",
+    "bindings": {
+      ";": "vim::CountCommand"
+    }
+  },
+  {
+    "context": "vim_mode == visual && !menu",
+    "bindings": {
+      ";": "vim::VisualCommand"
+    }
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      // Telescope
+      "space f f": "file_finder::Toggle",
+      "space f w": "pane::DeploySearch",
+      "space f b": "tab_switcher::Toggle",
+      "space f o": "projects::OpenRecent",
+      "space f z": "outline::Toggle",
+      "space t h": "theme_selector::Toggle",
+
+      // Buffers
+      "tab": "pane::ActivateNextItem",
+      "shift-tab": "pane::ActivatePreviousItem",
+      "space x": "pane::CloseActiveItem",
+      "ctrl-s": "workspace::Save",
+
+      // Árbol de archivos (nvim-tree)
+      "ctrl-n": "workspace::ToggleLeftDock",
+      "space e": "project_panel::ToggleFocus",
+
+      // Ventanas
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-l": "workspace::ActivatePaneRight",
+
+      // Terminal
+      "space h": "terminal_panel::Toggle",
+      "space v": "workspace::NewCenterTerminal",
+
+      // LSP
+      "space f m": "editor::Format",
+      "space r a": "editor::Rename",
+      "space c a": "editor::ToggleCodeActions",
+      "space D": "editor::GoToTypeDefinition",
+      "space d s": "diagnostics::Deploy",
+      "space /": "editor::ToggleComments",
+
+      // Git
+      "space g t": "git_panel::ToggleFocus",
+
+      // REPL (celdas # %%)
+      "space r r": "repl::Run",
+      "space r i": "repl::RunInPlace",
+      "space r c": "repl::ClearOutputs",
+      "space r R": "repl::Restart",
+      "space r x": "repl::Interrupt",
+      "space r s": "repl::Sessions"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-k": "workspace::ActivatePaneUp"
+    }
+  }
+]

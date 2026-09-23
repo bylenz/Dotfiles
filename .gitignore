@@ -1,19 +1,39 @@
-# Ignorar archivos de contraseñas
-*.secret
+# Ignorar todo por defecto y whitelistear lo que se versiona
+*
+!.gitignore
+!.gitmodules
+!README.md
+!starship.toml
 
-# Ignorar cachés de aplicaciones
-.cache/
+!nvim/
+!nvim/**
 
-/github-copilot
-nvim/db_ui
-/alacritty
-/fish 
-/neofetch 
-/zed 
-/htop 
-/jgit 
-/raycast 
-/configstore
-/envman
+!herdr/
+!herdr/config.toml
 
+# Submódulos (repos propios)
+!sketchybar
+!aerospace
 
+!ghostty/
+!ghostty/config
+
+!kitty/
+!kitty/kitty.conf
+
+!karabiner/
+!karabiner/karabiner.json
+
+!zed/
+!zed/settings.json
+!zed/keymap.json
+!zed/themes/
+!zed/themes/**
+
+!btop/
+!btop/**
+
+!git/
+!git/ignore
+
+.DS_Store

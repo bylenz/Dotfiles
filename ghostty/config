@@ -1,0 +1,29 @@
+# Ghostty config
+
+# Font
+font-family = CaskaydiaCove NFM
+font-size = 13
+
+# Theme (built-in ghostty theme)
+theme = Gruvbox Dark Hard
+
+# No titlebar / traffic-light buttons (clean look, still resizable; buttons appear on hover in fullscreen)
+macos-titlebar-style = hidden
+
+# Transparency + blur (macOS)
+background-opacity = 0.95
+background-blur-radius = 20
+
+# Padding
+window-padding-x = 5
+window-padding-y = 5
+window-padding-balance = true
+
+# Cursor
+cursor-style = block
+cursor-style-blink = false
+mouse-hide-while-typing = true
+
+# Misc niceties
+macos-option-as-alt = true
+copy-on-select = clipboard

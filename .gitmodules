@@ -1,0 +1,6 @@
+[submodule "sketchybar"]
+	path = sketchybar
+	url = git@github.com:bylenz/sketchybar-config.git
+[submodule "aerospace"]
+	path = aerospace
+	url = git@github.com:bylenz/aerospace-config.git
